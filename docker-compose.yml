@@ -1,6 +1,5 @@
 cron:
-  #image: eeacms/rancher.api.cron
-  image: local.rancher.api.cron
+  image: eeacms/rancher.api.cron
   environment:
     CRONTAB: |-
       00 00 * * * rancher --url RANCHER_URL --access-key RANCHER_ACCESS --secret-key RANCHER_SECRET --env RANCHER_ENVID restart STACK/SERVICE
