@@ -1,0 +1,5 @@
+cron:
+  image: eeacms/rancher.api.cron
+  environment:
+    CRONTAB: |-
+      * * * * * echo 1 minute cron
