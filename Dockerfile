@@ -1,8 +1,8 @@
 FROM alpine:3.9
 MAINTAINER "Anton Cupcea" <anton.cupcea@eaudeweb.ro>
 
-ENV RANCHER_CLI_VERSION=v0.6.14 \
-
+ENV RANCHER_CLI_VERSION=v0.6.14 
+    
 
 RUN apk add --update bash curl && \
     rm -rf /var/cache/apk/* && \
@@ -14,4 +14,4 @@ RUN apk add --update bash curl && \
 COPY src/docker-entrypoint.sh /
 
 ENTRYPOINT  ["/docker-entrypoint.sh"]
-
+RUN ["chmod", "+x", "/docker-entrypoint.sh"]

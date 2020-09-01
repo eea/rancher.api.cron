@@ -30,7 +30,7 @@ Here is a basic example of a `docker-compose.yml` file using the `eeacms/rancher
       image: eeacms/rancher.api.cron
       environment:
         CRONTAB: |-
-          * * * * * echo 1 minute cron
+          * * * * * rancher --url RANCHER_URL --access-key RANCHER_ACCESS --secret-key RANCHER_SECRET --env RANCHER_ENVID operation STACK/SERVICE
 
 ## Copyright and license
 
