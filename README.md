@@ -13,7 +13,7 @@ This image is generic, thus you can obviously re-use it within your non-related 
 
 ### Source code
 
-  - [github.com](http://github.com/eea/rancher.api.cron
+  - [github.com](http://github.com/eea/rancher.api.cron)
 
 
 ### Installation
